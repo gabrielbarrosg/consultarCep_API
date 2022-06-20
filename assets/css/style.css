@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: row;
+}
+#valida-cep {
+    width: 50%;
+    height: 100%;
+}
+#pesquisa-cep {
+    width: 50%;
+    height: 100%;
+}
+
+.valida{
+    background-color: rgb(72, 134, 249);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pesquisa {
+    background-color: rgb(0, 88, 252);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#resultado{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cep {
+    width: 150px;
+    height: 20px;
+}
+.btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(72, 134, 249);
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    transition-duration: 0.3s;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 60, 255);
+    color: rgb(255, 255, 255);
+}
+strong {
+    color: rgb(72, 134, 249);
+}
