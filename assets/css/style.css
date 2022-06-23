@@ -70,3 +70,31 @@ input:hover{
     width: 300px;
     height: 40px;
 }
+
+
+
+@media(max-width:1280px){
+    #resultado input {
+        padding: 10px;
+        width: 200px;
+        height: 40px;
+    }
+}
+@media(max-width:412px){
+    #resultado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:10px;
+    }
+    #resultado input {
+        width: 300px;
+    }
+
+    .pesquisa{
+        flex-direction: column;
+    }
+    .pesquisa #cep, .pesquisa .btn{
+        width: 300px;
+    }
+}
