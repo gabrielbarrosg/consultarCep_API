@@ -8,25 +8,31 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="valida-cep">
-        <div class="valida">
+    <div id="pesquisa-cep">
+        <div class="pesquisa">
             <input id="cep" type="number" placeholder="Digite o CEP">
             <button class="btn" onclick="consultarCep()">Pesquisar</button>
         </div>
-        
-        <div id="resultado-valida-cep">Resultado aqui</div>
-    </div>
-    <div id="pesquisa-cep">
-        <div class="pesquisa">
-            <input id="uf" type="text" placeholder="UF">
-            <input id="cidade" type="text" placeholder="Cidade">
-            <input id="logradouro" type="text" placeholder="Logradouro">
-            <button class="btn" onclick="pesquisarCep()">Pesquisar</button>
+        <div id="resultado">
+            <label>Rua
+                <input id="rua" type="text" placeholder="Rua">
+            </label>
+            
+            <label>Bairro
+                <input id="bairro" type="text" placeholder="Bairro">
+            </label>
+            
+            <label>Cidade
+                <input id="cidade" type="text" placeholder="Cidade">
+            </label>
+            
+            <label>Estado
+                <input id="estado" type="text" placeholder="Estado">
+            </label>
+            
         </div>
-
-        <div id="resultado-pesquisa-cep">Resultado aqui</div>
     </div>
-    
+
 
     <script src="assets/js/script.js"></script>
 </body>
