@@ -1,52 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 *{
+    color: white;
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(25, 25, 25);
+    min-height: 100vh;
+    background-color: #252736;
+}
+
+h1{
+    color: rgb(11, 255, 153);
 }
 #pesquisa-cep{
-    height: 700px;
-    display: flex;
-    flex-direction: row;
-}
-.pesquisa{
-    background-color: rgb(72, 134, 249);
-    width: 400px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     gap: 10px;
 }
 
-#resultado{
-    background-color: rgba(255, 255, 255, 0.973);
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#cep{
+    padding-left: 10px;
     width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 40px;
 }
-#cep {
-    width: 150px;
-    height: 20px;
-}
-.btn {
-    background-color: rgb(255, 255, 255);
-    color: rgb(72, 134, 249);
-    border: none;
-    border-radius: 10px;
-    width: 150px;
-    height: 30px;
+.btn{
+    width: 100px;
+    height: 40px;
+    color: rgb(107, 255, 193);
+    background-color: #252736;
+    border: 2px solid rgb(107, 255, 193);
     transition-duration: 0.3s;
 }
 .btn:hover {
+    color: white;
+    background-color: rgb(37, 253, 163);
+    border: none;
     cursor: pointer;
-    background-color: rgb(0, 60, 255);
-    color: rgb(255, 255, 255);
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid rgb(136, 136, 136);
+    background-color: rgba(57, 63, 84, 0.8);
+    transition-duration: 0.3s;
+}
+input:hover{
+    border-bottom: 2px solid rgb(11, 255, 153);
+    background-color: rgba(45, 49, 63, 0.8);
+}
+
+#resultado input {
+    padding: 10px;
+    width: 300px;
+    height: 40px;
 }

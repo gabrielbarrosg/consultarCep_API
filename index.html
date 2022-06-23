@@ -9,27 +9,17 @@
 </head>
 <body>
     <div id="pesquisa-cep">
+        <h1>ViaCEP</h1>
         <div class="pesquisa">
             <input id="cep" type="number" placeholder="Digite o CEP">
             <button class="btn" onclick="consultarCep()">Pesquisar</button>
         </div>
+
         <div id="resultado">
-            <label>Rua
-                <input id="rua" type="text" placeholder="Rua">
-            </label>
-            
-            <label>Bairro
-                <input id="bairro" type="text" placeholder="Bairro">
-            </label>
-            
-            <label>Cidade
-                <input id="cidade" type="text" placeholder="Cidade">
-            </label>
-            
-            <label>Estado
-                <input id="estado" type="text" placeholder="Estado">
-            </label>
-            
+            <input id="rua" type="text" placeholder="Rua" disabled>
+            <input id="bairro" type="text" placeholder="Bairro" disabled>
+            <input id="cidade" type="text" placeholder="Cidade" disabled>
+            <input id="estado" type="text" placeholder="Estado" disabled>            
         </div>
     </div>
 
